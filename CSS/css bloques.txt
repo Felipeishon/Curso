@@ -1,4 +1,4 @@
-    /*CSS reset settings here*/
+
 
 * {
     margin: 10px;
@@ -9,7 +9,7 @@
     width: 950px;
     background-color: silver;
     padding: 10px;
-    /*enviar hacia el centro*/
+    /*enviar hacia el centro padding*/
 }
 
 #header {
@@ -49,3 +49,4 @@
 #container {
     background-color: yellow;
     display: inline-block;
+}
