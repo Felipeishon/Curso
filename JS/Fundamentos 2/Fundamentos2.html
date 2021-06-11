@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos II</title>
+    <Script>
+        < !DOCTYPE html >
+            <
+            html lang = "en" >
+
+            <
+            head >
+            <
+            meta charset = "UTF-8" >
+            <
+            meta http - equiv = "X-UA-Compatible"
+        content = "IE=edge" >
+            <
+            meta name = "viewport"
+        content = "width=device-width, initial-scale=1.0" >
+            <
+            title > fundamentos II < /title> <
+        script >
+            /*
+                Tamaño Grande - Dado un array, escribe una función que cambie todos los números positivos en él, 
+               por el string “big”. Ejemplo: grande([-1,3,5,-5]) devuelve [-1, “big”, “big”, -5].
+            */
+
+            console.log("Ejercicio 1");
+
+        function cambiaPositivosaBig(arr) {
+
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] > 0) {
+                    arr[i] = "big";
+                }
+            }
+            return arr;
+        }
+        console.log(cambiaPositivosaBig([-1, 3, 5, -5]));
+
+
+        /*Imprime (print) el menor, devuelve (return) el mayor - 
+        Crea una función que tome un array de números. La función d
+        el menor valor del array, 
+        y devolver (return) el mayor.*/
+
+        console.log("Ejercicio 2");
+
+        function menorDevMayor(x) {
+            var min = x[0];
+            var max = x[0];
+            /* cuando i=0 entonces x[0] =-1 */ //i=0
+            for (let i = 0; i < x.length; i++) { // i++ es igual a decir i= i+1>> i-- es igual i-1
+                if (min > x[i]) {
+                    min = x[i];
+
+                }
+                if (max < x[i]) {
+                    max = x[i];
+
+                }
+
+            }
+            console.log(min);
+            return max;
+        }
+        menorDevMayor([-1, 3, 5, -5]);
+
+        console.log("Ejercicio 3")
+
+        /*Imprime (print) uno, devuelve (return) otro- Crea una función para un array de números.
+        La función debería imprimir (print) el penúltimo valor y devolver (return) el primer valor impar.*/
+
+
+        function penultimo(array) {
+            console.log("El Penúltimo valor es: " + array[array.length - 2]);
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] % 2 != 0) {
+                    return "El Primer Valor Impar es: " + array[i];
+                }
+            }
+        }
+        console.log(penultimo([5, 3, -1, 4, -5]));
+
+        console.log("Ejercicio 4")
+
+        /*Doble Visión - Dado un array, crea una función que devuelva un nuevo array donde cada valor se duplique. Entonces,
+        doble([1,2,3]) debiera devolver [2, 4, 6] sin cambiar el array original.*/
+
+        function doble(x) {
+            var nuevoarray = [];
+            for (let i = 0; i < x.length; i++) {
+                x[i] = x[i] + x[i]; // alternativa= x[i]= x[i]*2
+                nuevoarray.push(x[i]);
+            }
+            return nuevoarray;
+        }
+        doble([5, 2, 3]);
+
+        console.log("Ejercicio 5")
+
+        /*Contar Positivos -  Dado un array de números, 
+      crea una función para reemplazar el último valor con el número de valores positivos encontrados en el array. 
+      Ejemplo, contarPositivos([-1,1,1,1]) cambia el array original y devuelve [-1,1,1,3].*/
+
+        function contarpositivos(array) {
+            var positivos = 0;
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] > 0) {
+                    positivos = positivos + 1;
+                }
+            }
+            array[array.length - 1] = positivos;
+            return array;
+        }
+        console.log(contarpositivos([-1, 1, 1, 1]));
+
+
+        console.log("Ejercicio 6")
+
+        //Pares e Impares - Crea una función que acepte un array. 
+        /*Cada vez que ese array tenga 3 valores impares seguidos, 
+        imprime (print) “¡Qué imparcial!”, 
+        y cada vez que tenga 3 pares seguidos, imprime (print) “¡Es para bien!”.*/
+        /
+
+        function paresimpares(array) {
+            var pares = 0;
+            var impares = 0;
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] % 2 != 0) {
+                    impares = impares + 1;
+                    //pares = 0;
+                } else {
+                    pares = pares + 1;
+                    //impares = 0;
+                }
+                if (impares == 3) {
+                    console.log("¡Qué imparcial!");
+                    impares = 0;
+                } else if (pares == 3) {
+                    console.log("¡Es para bien!");
+                    pares = 0;
+                }
+            }
+        }
+        paresimpares([1, 2, 3, 1, 1, 1, 5, 4, 7, 2, 2, 2, 1, 1, 1]);
+    </script>
+</head>
+
+
+
+
+<body>
+
+</body>
+
+</html>
