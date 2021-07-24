@@ -1,0 +1,216 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    outline: dotted red 1px;
+}
+
+
+/* Contenedores */
+
+#Contenedor {
+    width: 1080px;
+    height: 720px;
+    background-color: white;
+    margin: 20px auto;
+}
+
+#top {
+    width: 98%;
+    height: 57%;
+    background-color: #245076;
+    padding: 1% 1%;
+}
+
+#mid {
+    width: 100%;
+    height: 30%;
+    background-color: white;
+}
+
+#bot {
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(#255279, #3272A8);
+    text-align: center;
+}
+
+#searchbar {
+    width: 20%;
+    height: 15%;
+    background-color: #444444;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 46%;
+    text-align: center;
+    box-shadow: 1px 1px;
+}
+
+#menusuperior {
+    width: 90%;
+    height: 10%;
+    background-color: #487FAD;
+    box-shadow: 1px 1px;
+    border-radius: 5px;
+    margin: 0% auto;
+    text-align: center;
+}
+
+#menuizquierdo {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    height: 50%;
+    padding: 2%;
+}
+
+.cajasmedio {
+    width: 45%;
+    height: 77%;
+    display: inline-block;
+    border-top: solid #73A7D5;
+    margin: 2% 2%;
+    text-align: center;
+    vertical-align: top;
+}
+
+#cajaparrafo {
+    width: 70%;
+    height: 58%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+/* Textos */
+
+#textsize {
+    font-size: 10px;
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0% 0% 1% 0%;
+}
+
+.tamañoletra {
+    text-decoration: none;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+h2 {
+    display: inline-block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 1% 3%;
+}
+
+.textomenuizquierdo {
+    color: white;
+    list-style-position: inside;
+    list-style-type: square;
+    margin: 3% 0%;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#parrafointerior {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 93%;
+    vertical-align: top;
+    margin: 1%;
+    font-size: 13px;
+}
+
+.caracteristics {
+    color: yellow;
+    font-style: italic;
+    text-align: center;
+    margin: 1%;
+    vertical-align: top;
+}
+
+.footer {
+    display: inline-block;
+    opacity: 70%;
+    color: white;
+    margin: 2% 2% 0% 2%;
+}
+
+h5 {
+    opacity: 70%;
+    color: white;
+    margin: 1%;
+}
+
+.titulomedio {
+    font-size: 20px;
+    margin: 2% 0%;
+}
+
+.parrafomedio {
+    font-size: 12px;
+}
+
+b {
+    color: #73A7D5;
+}
+
+.listamedio {
+    color: black;
+    display: inline-block;
+}
+
+.linkmedio {
+    color: #73A7D5;
+    font-size: 12px;
+}
+
+.linkmediosinpto {
+    list-style-type: none;
+}
+
+h4 {
+    color: white;
+}
+
+
+/* Imagenes */
+
+#logo {
+    width: 30%;
+    margin-left: 3%;
+    display: inline-block;
+}
+
+
+/* Inputs */
+
+#bar {
+    width: 50%;
+    height: 35%;
+    text-align: center;
+    font-size: 11px;
+    margin-top: 8%;
+    margin-right: 2%;
+}
+
+
+/* Botones */
+
+#go {
+    color: white;
+    background-color: #245076;
+    width: 15%;
+    height: 50%;
+    border-radius: 5px;
+}

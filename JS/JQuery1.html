@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery::</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $("button").click(function() {
+
+                console.log("mi primer JQuery...");
+                alert("mi primer Jquery...")
+            });
+
+            $("input").click(function() {
+
+                console.log("Desde el Input...");
+                alert("Desde el Input...")
+            });
+
+            $("#enviar3").click(function() {
+
+                console.log("Desde el boton 3...");
+                alert("Desde el boton 3..")
+            });
+            $(".enviar4").click(function() {
+
+                console.log("Desde el boton 4...");
+                alert("Desde el boton 4..")
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="button" value="enviar">
+        <button>enviar 2</button>
+        <input type="button" value="enviar 3" id="enviar3">
+        <input type="button" value="enviar 4" class="enviar4">
+
+    </div>
+</body>
+
+</html>

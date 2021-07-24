@@ -1,0 +1,71 @@
+encuestas
+id (PK) INT U AI NN
+pregunta varchar(50)
+opcion_1 varchar(20) NN
+opcion_2 varchar(20) NN
+opcion_3 varchar(20)
+opcion_4 varchar(20)
+fecha_creacion datetime NN
+fecha_actualizacion datetime
+usuario_id (FK) INT NN   (creador)
+
+usuarios
+id          (PK) INT U AI NOT NULL
+nombre varchar(45)
+rut        INT
+dv         varchar(4)
+edad     
+correo
+password
+direccion
+ciudad
+region
+...
+
+respuestas
+id (PK) AI Not Null
+encuesta_id (FK)
+opcion_1 int default 0
+opcion_2 int default 0
+opcion_3 int default 0
+opcion_4 int default 0
+
+
+encuestas_usuarios
+id (PK) integer AI NN
+encuesta_id (FK)
+usuario_id (FK)
+
+------------------------------------------------------------------------------------------------------
+
+
+usuarios
+ID:	(PK) INT U AI NOT NULL
+Nombre: Varchar (45)
+Rut:  INT
+DV:	varchar (4)
+Edad
+Correo
+Password
+Direccion
+Ciudad
+Region...
+
+encuestas
+id (PK) INT U AI NN
+pregunta varchar(50) 
+option_1 varchar(20) NN
+option_2 varchar(20) NN
+option_3 varchar(20)
+option_4 varchar(20)
+fecha_creacion datetime NN
+fecha_actualizacion datetime
+usuario_id (FK) INT NN (creador)
+
+respuestas
+id (PK) INT U AI NN
+encuestas_id
+opcion_1 INT defalt 0 (inicial)
+opcion_2 INT defalt 0 (inicial)
+opcion_3 INT defalt 0 (inicial)
+opcion_4 INT defalt 0 (inicial)

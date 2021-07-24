@@ -1,0 +1,54 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: red 1px dotted;
+}
+
+#encabezado {
+    width: 1500px;
+    height: 200px;
+    background-color: grey;
+}
+
+#move {
+    margin-left: 550px;
+}
+
+#contenedor1 {
+    width: 980px;
+    height: 200px;
+    vertical-align: top;
+    display: inline-block;
+    background-color: blue padding: 10px;
+}
+
+#mainfoto {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#vacio {
+    margin-left: 300px;
+}
+
+#barramedia {
+    margin-left: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#contenedorabajo {
+    width: 1000px;
+    height: 300px;
+    background-color: chocolate;
+}
+
+.cajas {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+
+}
