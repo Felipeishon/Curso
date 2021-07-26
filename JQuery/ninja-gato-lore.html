@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DE NINJA A GATO</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('img').click(function() {
+                var temp = $(this).attr('src');
+                $(this).attr('src', $(this).attr('data-alt-src'));
+                $(this).attr('data-alt-src', temp);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="centrar">De Ninja a Gato </h1>
+        <p class="centrar">Rompecabezas de jQuery utilizando dos imágenes divididas en 5 partes.</p>
+        <img src='imagenes/ninjacat/ninja0.png' data-alt-src='imagenes/ninjacat/cat0.png' /><br>
+        <img src='imagenes/ninjacat/ninja1.png' data-alt-src='imagenes/ninjacat/cat1.png' /><br>
+        <img src='imagenes/ninjacat/ninja2.png' data-alt-src='imagenes/ninjacat/cat2.png' /><br>
+        <img src='imagenes/ninjacat/ninja3.png' data-alt-src='imagenes/ninjacat/cat3.png' /><br>
+        <img src='imagenes/ninjacat/ninja4.png' data-alt-src='imagenes/ninjacat/cat4.png' /><br>
+
+    </div>
+</body>
+
+</html>

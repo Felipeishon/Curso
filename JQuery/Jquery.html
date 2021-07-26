@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //funcionalidad por etiqueta
+            $('button').click(function() {
+                console.log("Boton con Jquery");
+                alert("Boton con Jquery");
+            });
+            //mas genérico, se ejecuta para todas las etiquetas de este tipo
+            $('input').click(function() {
+                console.log("Input con Jquery");
+                alert("Input con Jquery");
+            });
+            //funcionalidad por clase
+            //se ejecuta esta funcion para cualquier elemento que tenga esa clase
+            $('.input2').click(function() {
+                console.log("Input2 con Jquery por clase");
+                alert("Input2 con Jquery por clase");
+            });
+            //funcionalidad por id (#)
+            //solo para el elemento con el id
+            $('#input3').click(function() {
+                console.log("Input3 con Jquery por id");
+                alert("Input3 con Jquery desde un id");
+            });
+
+
+
+            //fin jquery    
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <button>Jquery</button>
+        <input type="button" value="boton1">
+        <input type="button" value="boton2" class="input2">
+        <input type="button" value="boton3" id="input3">
+        <p class="input2">esto es un parrafo</p>
+    </div>
+</body>
+
+</html>

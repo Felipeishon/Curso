@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios THIS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+            //$('').accion(function(){});
+
+            $('#boton1').click(function() {
+                alert('Wena wenaaa!')
+            });
+
+            /* //para cada imagen, mas codigo
+            $('#image1').click(function() {
+                $('#image1').hide();
+            });
+            $('#image2').click(function() {
+                $('#image2').hide();
+            });
+            $('#image3').click(function() {
+                $('#image3').hide();
+            });
+            $('#image4').click(function() {
+                $('#image4').hide();
+            });
+            $('#image5').click(function() {
+                $('#image5').hide();
+            });*/
+
+            //captura para todas las imagenes
+            /*
+            $('img').click(function() {
+                $('#image1').hide();
+                $('#image2').hide();
+                $('#image3').hide();
+                $('#image4').hide();
+                $('#image5').hide();
+            }); */
+
+            $('img').click(function() {
+                $(this).hide(); //captura el evento y quien lo gatillo
+                console.log($(this));
+            });
+            //Fade (hide-show-toggle)
+            $('#boton2').click(function() {
+                $('#image1, #image2, #image3').hide();
+            })
+            $('#boton3').click(function() {
+                $('#image1, #image2, #image3').show();
+            })
+            $('#boton4').click(function() {
+                $('#image1, #image2, #image3').toggle('slow');
+            })
+
+            //slide (up-down-toggle)
+            $('#boton5').click(function() {
+                $('#image4, #image5, #image6').slideUp();
+            })
+            $('#boton6').click(function() {
+                $('#image4, #image5, #image6').slideDown();
+            })
+            $('#boton7').click(function() {
+                $('#image4, #image5, #image6').slideToggle();
+            })
+
+            //fade (Out-In-Toggle)
+            $('#boton8').click(function() {
+                $('#image7, #image8, #image9').fadeOut(4000);
+            })
+            $('#boton9').click(function() {
+                $('#image7, #image8, #image9').fadeIn(4000);
+            })
+            $('#boton10').click(function() {
+                $('#image7, #image8, #image9').fadeToggle(4000);
+            })
+
+            //addClass
+            $('#boton11').click(function() {
+                $('#image10, #image11, #image12').addClass('image10');
+            })
+            $('#boton12').click(function() {
+                $('#image10, #image11, #image12').removeClass('image10');
+            })
+            $('#boton13').click(function() {
+                $('#image10, #image11, #image12').toggleClass('image10');
+            })
+
+            //Before, After
+            $('#boton14').click(function() {
+                $('#bfaf').before('Mensaje before: Imagenes 13, 14 y 15');
+            })
+            $('#boton15').click(function() {
+                $('#bfaf').after('Mensaje after: Imagenes 13, 14 y 15');
+            })
+
+            //append, html
+            $('#boton16').click(function() {
+                $('ul').append('<li><img style: width=10px; src=imagenes/tuxlinux.png alt=mascota linux></li>');
+            })
+            $('#boton17').click(function() {
+                $('#Apphtml').html('<a href=#>Append y HTML con boton HTML</a>');
+            })
+
+            //attr
+            $('#boton18').click(function() {
+                $('#image17').attr('height', '500');
+            })
+            $('#boton19').click(function() {
+                $('#image17').attr('height', '200');
+            })
+
+            //Val
+            $('#boton20').click(function() {
+                $('input:text').val('Tux');
+            });
+            //isNaN --> para validar si un input es un numero o no
+
+            //Text
+            $('#boton21').click(function() {
+                $('#textmethod').text(' Imagen del compa Tux ');
+            })
+
+
+            //fin jquery
+        });
+    </script>
+    <style>
+        img {
+            width: 200px;
+        }
+        
+        .image10 {
+            width: 150px;
+            padding: 2%;
+            background-color: red;
+        }
+        
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Hide, Show, Toggle</h1>
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image1">
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image2">
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image3">
+        <br>
+        <button id="boton1">Boton 1</button>
+        <button id="boton2">Boton Out</button>
+        <button id="boton3">Boton In</button>
+        <button id="boton4">Boton Toggle</button>
+        <hr>
+        <h1>Slide Up, Slide Down, Slide Toggle</h1>
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image4">
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image5">
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image6">
+        <br>
+        <button id="boton5">Slide Up</button>
+        <button id="boton6">Slide Down</button>
+        <button id="boton7">Slide Toggle</button>
+        <hr>
+        <h1>Fade Out, Fade In, Fade Toggle</h1>
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image7">
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image8">
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image9">
+        <br>
+        <button id="boton8">Fade Out</button>
+        <button id="boton9">Fade In</button>
+        <button id="boton10">Fade Toggle</button>
+        <hr>
+        <h1>Class In, Class Out, Class Toggle</h1>
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image10">
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image11">
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image12">
+        <br>
+        <button id="boton11">Class In</button>
+        <button id="boton12">Class Out</button>
+        <button id="boton13">Toggle Class</button>
+        <hr>
+        <h1 id="bfaf">Before, After</h1>
+        <br>
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image13">
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image14">
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image15">
+        <br>
+        <button id="boton14">Before</button>
+        <button id="boton15">After</button>
+        <hr>
+        <h1 id="Apphtml">Append, HTML</h1>
+        <ul>
+            <li><img src="imagenes/tuxlinux.png" alt="mascota linux" id="image16"></li>
+        </ul>
+        <br>
+        <button id="boton16">Append</button>
+        <button id="boton17">HTML</button>
+        <hr>
+        <h1>Attr</h1>
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image17" width="200">
+        <br>
+        <button id="boton18">Attr On</button>
+        <button id="boton19">Attr Off</button>
+        <hr>
+        <h1>Val</h1>
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image18">
+        <br>
+        <label for="nombre">El nombre de la mascota es: <input type="text" name="nombre"></label>
+        <br>
+        <button id="boton20">Set Val</button>
+        <hr>
+        <h1 id="textmethod">Text method (de img a text)</h1>
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image19">
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image20">
+        <img src="imagenes/tuxlinux.png" alt="mascota linux" id="image21">
+        <br>
+        <button id="boton21">Text On</button>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Ninja Desapareciendo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //agregar imagenes
+            for (let i = 1; i <= 8; i++) {
+                $('#container').append('<img src=imagenes/tux_ninja.png alt=Tux Ninja>');
+            };
+            $('img').addClass('ninja');
+            //añadir boton
+            $('#container').append('<br><button>Restaurar</button>');
+            //desaparece la imagen
+            $('img').click(function() {
+                $(this).fadeOut();
+            });
+            //accion para aparecer las imagenes
+            $('button').click(function() {
+                $('img').fadeIn(3000);
+            });
+
+
+
+            //fin jquery
+        });
+    </script>
+    <style>
+        .ninja {
+            width: 200px;
+            border: 1px solid black;
+            margin: 1%;
+        }
+        
+        #container {
+            width: 900px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JQuery - assignment 1</h1>
+    <div id="container">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Cursor en/fuera</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('img').hover(function() {
+                $(this).attr('src', $(this).attr('data-alt'));
+            }, function() {
+                $(this).attr('src', $(this).attr('temp'));
+            });
+
+
+
+
+
+            //fin jquery
+        });
+    </script>
+    <style>
+        #contenedor {
+            width: 1000px;
+            text-align: center;
+        }
+        
+        img {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>Traje de Iron Man</h1>
+        <img src="imagenes/IronMan-front.png" data-alt="imagenes/IronMan-back.png" temp="imagenes/IronMan-front.png" alt="Foto Iron Man">
+        <img src="imagenes/IronMan-front.png" data-alt="imagenes/IronMan-back.png" temp="imagenes/IronMan-front.png" alt="Foto Iron Man">
+        <img src="imagenes/IronMan-front.png" data-alt="imagenes/IronMan-back.png" temp="imagenes/IronMan-front.png" alt="Foto Iron Man">
+        <img src="imagenes/IronMan-front.png" data-alt="imagenes/IronMan-back.png" temp="imagenes/IronMan-front.png" alt="Foto Iron Man">
+    </div>
+
+</body>
+
+</html>
