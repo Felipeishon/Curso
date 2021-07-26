@@ -1,0 +1,30 @@
+* {
+    outline: dotted red 1px;
+}
+
+#cuadroarriba {
+    background-color: blue;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+#cuadroalmedio {
+    background-color: rgb(0, 255, 98);
+    width: 100%;
+    min-height: 66px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+#cuadroabajo {
+    background-color: rgb(116, 131, 122);
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
