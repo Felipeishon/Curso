@@ -2,22 +2,50 @@
 <html lang="en">
 
 <head>
-    <title>Position Practice</title>
-    <link rel="stylesheet" type="text/css" href="trazando-tus-bloques.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Bloques con Bootstrap</title>
+    <!-- Etiquetas meta requeridas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Etiquetas meta de JavaScript Opcionales-->
+    <!-- Primero jQuery, luego Popper.js, y por último Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="header"></div>
-        <div id="navigation"></div>
-        <div id="main_content">
-            <div class="subcontents"></div>
-            <div class="subcontents"></div>
-            <div class="subcontents"></div>
-            <div id="advertisement"></div>
+    <div class="container">
+        <div class="container bg-dark p-5">
+            <div class="row align-items-center">
+                <div class="col-5 bg-info text-center text-white p-2 mx-auto">Header</div>
+            </div>
+        </div>
+
+        <div class="row p-3">
+
+            <div class="col-4 bg-primary text-center text-white mr-3 p-4" style="height:300px;">Aside</div>
+
+            <div class="col bg-warning text-center text-white p-4">Main
+                <div class="row" style="height:400px;">
+
+                    <div class="col bg-white pt-5 text-center pb-5 mx-1 text-dark mt-2">Article</div>
+
+                    <div class="col bg-white pt-5 text-center pb-5 mx-1 text-dark mt-2">Article</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container bg-success p-2 ">
+            <div class="col text-center text-white p-1 ">Footer</div>
         </div>
     </div>
-    <!-- end of wrapper -->
+
 </body>
 
 </html>
